@@ -1,9 +1,14 @@
 import './App.css'
+import Footer from "./layout/Footer.tsx";
+import Navbar from "./layout/Navbar.tsx";
+import Home from "./pages/Home.tsx";
 
 function App() {
   return (
     <>
-        <h1>Hola, bienvenido al Proyecto Final!</h1>
+        <Navbar />
+        <Home />
+        <Footer />
     </>
   )
 }
