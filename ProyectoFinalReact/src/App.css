@@ -1,0 +1,14 @@
+#root {
+    --background: #f0f2f5;
+    --primary: #4a90e2;
+    --secondary: #50e3c2;
+    --primaryTransparent: rgba(74, 144, 226, 0.26);
+    --secondaryTransparent: rgba(80, 227, 194, 0.25);
+    --text-color: #333333;
+    --text-color-invert: #ffffff;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
