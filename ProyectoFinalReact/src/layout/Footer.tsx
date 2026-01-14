@@ -1,36 +1,16 @@
+import { footerLinks } from "../data/links.ts";
+import FooterColumn from "../components/FooterColumns.tsx";
 
-export default function Navbar() {
-        return (
-        <nav className="bg-dark m-0 p-4 rounded-3">
-            <div className="container-fluid">
-                <div className="d-flex text-white" >
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item active">Columna</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                    </ul>
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item active">Columna</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                    </ul>
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item active">Columna</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                        <li className="nav-item">Hola</li>
-                    </ul>
+export default function Footer() {
+    return (
+        <div className="bg-dark rounded-bottom-2 m-5 p-4">
 
-                </div>
-            </div>
-        </nav>
+        <footer className="container-fluid d-flex justify-content-between  text-white ">
+            {footerLinks.map((column, index) => (
+                <FooterColumn key={index} {...column} />
+            ))}
+        </footer>
+            <p className="text-white">CopyrightDAW © 2026. Todos los derechos Reservados.</p>
+        </div>
     );
 }

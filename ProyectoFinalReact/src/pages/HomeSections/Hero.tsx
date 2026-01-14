@@ -1,6 +1,6 @@
 export default function Hero() {
     return(
-        <section className="d-flex">
+        <section className="d-flex mb-5">
             <div className="w-50 d-flex justify-content-center align-items-center flex-column">
                 <h1 className="">Bienvenido a Mundo Cine</h1>
                 <p className="">Descubre los últimos éxitos en taquilla</p>

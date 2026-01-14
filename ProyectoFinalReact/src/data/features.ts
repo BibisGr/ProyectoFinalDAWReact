@@ -16,3 +16,27 @@ export const features = [
     },
 
 ]
+export const steps = [
+    {
+        title: 'Step 1',
+        text: 'Search – Use filter to find properties that match your needs.'
+    },
+    {
+        title: 'Step 2',
+        text: 'Select – Choose the best option available.'
+    },
+    {
+        title: 'Step 3',
+        text: 'Contact – Get in touch with the agent.'
+    },
+    {
+        title: 'Step 4',
+        text: 'Close – Finalize the deal securely.'
+    }
+];
+
+export const stats = [
+    { value: '10+ Million', label: 'Active Listings' },
+    { value: '8x More', label: 'User Engagement' },
+    { value: '1+ Million', label: 'Happy Clients' }
+];
