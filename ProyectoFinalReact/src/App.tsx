@@ -7,6 +7,7 @@ import CarteleraPage from "./pages/CarteleraPage.tsx";
 import TicketsPage from "./pages/TicketsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import LoginRegistrerPage from "./pages/LoginRegistrerPage.tsx";
+import NOTFoundComponent from "./components/404NF.tsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/tickets" element={<TicketsPage />}/>
             <Route path="/contacto" element={<ContactPage />}/>
             <Route path="/login" element={<LoginRegistrerPage />}/>
+            <Route path="*" element={<NOTFoundComponent/>}/>
         </Routes>
         <Footer />
     </>

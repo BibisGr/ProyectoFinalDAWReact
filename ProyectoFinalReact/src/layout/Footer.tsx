@@ -3,9 +3,9 @@ import FooterColumn from "../components/FooterColumns.tsx";
 
 export default function Footer() {
     return (
-        <div className="bg-dark rounded-bottom-2 m-5 p-4">
+        <div className="container-fluid m-0 bg-dark rounded-bottom-2 p-4">
 
-        <footer className="container-fluid d-flex justify-content-between  text-white ">
+        <footer className=" d-flex justify-content-between  text-white ">
             {footerLinks.map((column, index) => (
                 <FooterColumn key={index} {...column} />
             ))}

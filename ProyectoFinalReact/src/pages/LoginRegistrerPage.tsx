@@ -5,10 +5,9 @@ export default function LoginRegistrerPage(){
     const  [isLogin, setIsLogin] = useState(true)
     const toogleForm =  () =>setIsLogin(!isLogin)
     return (
-        <section>
+        <section className="pb-5">
             {isLogin ? <Login/> : <Registrer/>}
-
-        <button onClick={toogleForm}>
+        <button className="btn btn-outline-primary py-2 mt-0" onClick={toogleForm}>
             {isLogin ? "Registrarse" : "Iniciar Sesion"}
         </button>
         </section>
