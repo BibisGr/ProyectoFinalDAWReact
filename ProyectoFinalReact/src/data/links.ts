@@ -29,5 +29,9 @@ export const NavLinks = [
     {
         name: 'Contacto',
         url: '/contacto'
+    },
+    {
+        name: 'Login',
+        url: '/login'
     }
 ];
