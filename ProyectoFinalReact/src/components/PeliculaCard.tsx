@@ -1,36 +1,18 @@
-import {useNavigate} from "react-router-dom";
-
-type MovieProps ={
-    id:string;
+type PeliculaCardProps = {
     title: string;
-    year: number
-    poster: string;
-    director: string;
+    price: number;
+    image: string;
 }
-export function PeliculaCard({title, year, poster, director}: MovieProps) {
-    return (
-        <article className="card p-3 cardPeli" style={{width: "20rem"}}>
-            <h3 className="card-title">{title}</h3>
-            <img  className="rounded-4" src={poster} alt={title} />
-            <p className="text-success">Year: {year}</p>
-            <p className="text-success">Director: {director}</p>
-            <button className="buttonBuy">Ver Detalles</button>
-        </article>
-    )
-}
-export function PeliculaCardAPI({id,title, year, poster, director}: MovieProps) {
-    const navigate = useNavigate();
 
-    const handleClick = () =>{
-        navigate("/movie/" + id);
-    }
+export default function PeliculaCard({ title, price, image }: PeliculaCardProps) {
     return (
-        <article className="card p-3 cardPeli" style={{width: "20rem"}}>
-            <h3 className="card-title">{title}</h3>
-            <img  className="rounded-4" src={poster} alt={title} />
-            <p className="text-success">Year: {year}</p>
-            <p className="text-success">Director: {director}</p>
-            <button onClick={handleClick} className="buttonBuy">Ver Detalles</button>
-        </article>
-    )
+        <div className="card" style={{ width: "18rem" }}>
+            <img src={image} className="card-img-top" alt={title} />
+            <div className="card-body">
+                <h5 className="card-title">{title}</h5>
+                <p className="card-text">Precio: ${price.toFixed(2)}</p>
+                <a href="#" className="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    );
 }

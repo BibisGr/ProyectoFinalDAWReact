@@ -8,6 +8,7 @@ import TicketsPage from "./pages/TicketsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import LoginRegistrerPage from "./pages/LoginRegistrerPage.tsx";
 import NOTFoundComponent from "./components/404NF.tsx";
+import MovieDetail from "./components/MovieDetail.tsx";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         {/*<Home />*/}
         <Routes>
             <Route path="/" element={<Home />}/>
+            <Route path="/cartelera" element={<CarteleraPage />}/>
+            <Route path="/movie/:id" element={<MovieDetail />}/>
             <Route path="/cartelera" element={<CarteleraPage />}/>
             <Route path="/tickets" element={<TicketsPage />}/>
             <Route path="/contacto" element={<ContactPage />}/>
