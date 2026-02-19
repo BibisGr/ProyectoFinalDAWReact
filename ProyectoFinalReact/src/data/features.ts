@@ -36,7 +36,7 @@ export const steps = [
 ];
 
 export const stats = [
-    { value: '10+ Million', label: 'Active Listings' },
-    { value: '8x More', label: 'User Engagement' },
-    { value: '1+ Million', label: 'Happy Clients' }
+    { value: '10+ Million', label: 'Cintas emitidas' },
+    { value: '8x More', label: 'Servicios Brindados' },
+    { value: '1+ Million', label: 'Clientes Felices' }
 ];

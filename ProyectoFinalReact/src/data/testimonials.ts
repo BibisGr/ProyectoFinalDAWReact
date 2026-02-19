@@ -34,11 +34,15 @@ export const testimonials = [
 
 export const blogPosts = [
     {
-        title: 'Modern House Design',
-        price: '€ 135,500'
+        title: 'Eventos privados en el cine',
+        price: '€ 135.00'
     },
     {
-        title: 'Luxury Apartment',
+        title: 'Cumpleaños y fiestas en el cine',
+        price: '€ 150.00'
+    },
+    {
+        title: 'Alquiler de sala para eventos',
         price: '€ 115,500'
     }
 ];

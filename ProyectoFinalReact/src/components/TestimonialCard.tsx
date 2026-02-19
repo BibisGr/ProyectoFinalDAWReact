@@ -6,7 +6,7 @@ type TestimonialPrps = {
 }
 export default function TestimonialCard({ name, text, stars, photoUser }: TestimonialPrps) {
     return (
-        <article className="card bg-light-subtle text-drak p-4 mt-3 m-4 rounded-3 border-0 shadow">
+        <article className="card bg-light-subtle text-dark p-4 m-3 rounded-3 border-0 shadow" style={{ width: '40%' }}>
             <div className="d-flex align-items-center gap-3 mb-3">
                 <img
                     className="rounded-circle bg-gradient bg-secondary d-flex align-items-center justify-content-center flex-shrink-0"
